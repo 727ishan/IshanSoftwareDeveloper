@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishan Softwer Devloper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>I</span>shan.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Devloper</p>
+                <h1>Hi, I'm <span>Ishan</span> Singh<br> From India</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/ishanabout2.jpg" width="430px" height="511px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Ishan Singh Chouhan, a multidisciplinary creative with a passion for crafting
+                        immersive digital experiences and harmonious sounds. With a diverse skill set spanning web
+                        development, UI/UX design and content creation, I bring a unique blend of artistry and technical
+                        expertise to every project.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Software Devloper</span><br>DHT Solution Private limited (Vadodara)</li>
+                            <!-- <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bechelor in Computer Science</span><br>Madhav University Sirohi (Rajasthan)</li>
+                            <!-- <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Our web design services are tailored to create visually stunning and highly functional websites.
+                        We believe that your website is often the first impression your audience has of your brand, so
+                        we focus on creating designs that captivate, engage, and convert. Our approach combines
+                        creativity with the latest web technologies to deliver websites that not only look great but
+                        also perform flawlessly on all devices. Whether you need a brand new website, a redesign, or
+                        ongoing maintenance, we have the expertise to bring your vision to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>User experience is at the heart of everything we do. Our UI/UX design services are dedicated to
+                        creating seamless and intuitive user interfaces that enhance user satisfaction and engagement.
+                        We understand that design is not just about aesthetics; it's about usability and functionality.
+                        Our designers are experts in crafting user-centric interfaces that make interactions with your
+                        product a breeze. From wireframing to prototyping and user testing, we ensure that every aspect
+                        of the user journey is thoughtfully designed for maximum impact.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>In the fast-paced world of mobile apps, a great design sets you apart. Our app design services
+                        focus on creating mobile and web applications that are not only visually appealing but also
+                        provide a superior user experience. Whether you're developing a mobile app for iOS, Android, or
+                        a web app, we have the expertise to create designs that are not only user-friendly but also
+                        aligned with your brand identity. From concept to final design, we work closely with you to
+                        ensure your app stands out in a crowded marketplace.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .my-work {
+
+            background-color: #2626261b;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 7px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .work-item {
+            margin-bottom: 20px;
+            x;
+        }
+
+        .work-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: auto;
+            box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .work-item h3 {
+            margin-top: 10px;
+        }
+
+        .my-work div h3 {
+
+            display: flexbox;
+            padding: 10px 20px;
+            background-color: #ff0051;
+
+            color: #fff;
+
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+
+
+        .my-work div h3:hover {
+            background-color: #0056b3;
+
+        }
+
+        .head1 {
+            text-align: center;
+            background: #2626261b;
+            /* Center text horizontally */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            ;
+        }
+
+        .head1 h1 {
+            font-size: 36px;
+            /* Adjust the font size as needed */
+        }
+
+        .head1 p {
+            font-size: 18px;
+            /* Adjust the font size as needed */
+        }
+    </style>
+    <div id="portfolio">
+        <div class="head1">
+            <h1 class>My Work</h1>
+            <p>Web Design & Devlopment</p>
+
+        </div>
+
+
+        <div class="container-text">
+
+            <div class="my-work">
+                <div class="work-item">
+                    <img src="img/work-1.png" alt="Work 1">
+                    <h3>Social Media</h3>
+                    <p>Our social media app is a platform designed to connect people, foster communities, and enable
+                        meaningful interactions. With a sleek and user-friendly interface, we've created an environment
+                        where users can share their stories, connect with friends, and stay up-to-date with the latest
+                        trends..</p>
+                </div>
+                <div class="work-item">
+                    <img src="img/work-2.png" alt="Work 2">
+                    <h3>Music App</h3>
+                    <p>Our music app is a symphony of sound and design, providing music enthusiasts with an immersive
+                        and enjoyable listening experience. We've curated a vast library of tracks from various genres,
+                        ensuring there's something for every mood and moment.</p>
+                </div>
+                <div class="work-item">
+                    <img src="img/work-3.png" alt="Work 2">
+                    <h3>Online Shopping App</h3>
+                    <p>Our shopping app is your one-stop destination for a seamless and enjoyable online shopping
+                        experience. We've combined modern design with powerful functionality to make shopping effortless
+                        and convenient.</p>
+                </div>
+                <!-- Add more work items as needed -->
+                <a href="#" class="semoreBtn">See more</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Email: ishansinghrajput21@gmail.com</p>
+                    <p>Phone: 9509531950</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/ishansingh_chouhan?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fab fa-instagram" target="_blank"></i></a>
+                        <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
+                        <a href="https://twitter.com/IshanSingh21?t=rZqZzRn1Bc0Q1wpIqsH0nQ&s=09"><i class="fab fa-twitter-square" target="_blank"></i></a>
+                        <a href="https://youtube.com/@IshanSinghRajputYT?si=a3KfFBU7GTiVVgTY"><i class="fab fa-youtube" target="_blank"></i></a>
+                    </div>
+                    <a href="img/cv.jpg" class="btn btn2" download> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Ishan Singh Chouhan. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
