@@ -1,0 +1,492 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+ }
+
+ body {
+     background: #080808;
+     color: #fff;
+ }
+
+ #header {
+     margin-left: 0%;
+
+     width: 100%;
+     height: 100vh;
+     background-image: url('img/2bgimg.jpg');
+     background-size: cover;
+     background-position: center;
+ }
+
+
+
+ .container {
+     padding: 10%;
+ }
+
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .logo {
+     width: 140px;
+     font-size: 300%;
+     font-family: 'Kanit', sans-serif;
+ }
+
+ .logo span {
+     color: #ff004f;
+ }
+
+ nav ul li {
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+     position: relative;
+ }
+
+ nav ul li a {
+     color: #ffffff;
+     text-decoration: none;
+     font-size: 18px;
+ }
+
+ nav ul li a::after {
+     content: " ";
+     width: 0;
+     height: 3px;
+     background: #ff004f;
+     position: absolute;
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     transition: 0.5s;
+ }
+
+ nav ul li a:hover::after {
+     width: 100%;
+ }
+
+ .header-text {
+     margin-top: 20%;
+     font-size: 30px;
+
+ }
+
+ .header-text hi {
+     font-size: 60px;
+     margin-top: 20px;
+ }
+
+ .header-text p {
+     font-family: 'Kanit', sans-serif;
+
+
+ }
+
+ .header-text h1 span {
+     color: #ff004f
+ }
+
+ #about {
+     padding: 80px 0;
+     color: #ababab;
+ }
+
+ .row {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .about-col-1 {
+     flex-basis: 35%;
+ }
+
+ .about-col-1 img {
+     width: 100%;
+     width: 300px;
+     border-radius: 15px;
+
+ }
+
+ .about-col-2 {
+     flex-basis: 60%;
+ }
+
+ .sub-title {
+     font-size: 60px;
+     font-weight: 600;
+     color: white;
+ }
+
+ /* Button styling */
+ .tab-titles p.tab-links {
+     display: inline-block;
+     margin-top: 5%;
+     padding: 5px 20px;
+     background-color: #0040ff61;
+     /* Button background color */
+     color: #fff;
+     /* Text color */
+     text-align: center;
+     text-decoration: none;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     /* Smooth color transition on hover */
+     margin-right: 10px;
+     /* Add spacing between buttons */
+ }
+
+ /* Active button */
+ .tab-titles p.active-link {
+     background-color: #ff0033ce;
+     /* Change background color for the active button */
+ }
+
+ /* --------Part Time Off-------- */
+
+ /* .tab-links {
+     margin-right: 50px;
+     font-size: 18px;
+     font-weight: 500;
+     cursor: pointer;
+     position: relative;
+ }
+
+ .tab-links::after {
+     content: '';
+     width: ;
+     height: 3px;
+     background-color: #ffc9da;
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+     transition: 0.5s;
+
+ } */
+
+ .tab-links.active-link::after {
+     width: 50%;
+ }
+
+ .tab-contents ul li {
+     list-style: none;
+     margin: 10px 0;
+ }
+
+ .tab-contents ul li span {
+     color: #b54767;
+     font-size: 14px;
+
+ }
+
+ .tab-contents {
+     display: none;
+
+ }
+
+ .tab-contents.active-tab {
+     display: block;
+
+ }
+
+ /* -------SERVICES--------- */
+
+ #services {
+     padding: 30px 0;
+
+ }
+
+ .services-list {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 40px;
+     margin-top: 50px;
+
+ }
+
+ .services-list p {
+     margin-top: 5%;
+     /* font-family: 'Times New Roman', Times, serif; */
+
+ }
+
+ .sub-title {
+     color: #262626
+ }
+
+
+ /* Style for the "Learn More" buttons */
+ .services-list div a {
+     display: inline-block;
+     padding: 5px 20px;
+     margin-top: auto;
+     background-color: #ff004f;
+     /* Button background color */
+     color: #fff;
+     /* Text color */
+     text-decoration: none;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     /* Smooth color transition on hover */
+ }
+
+ /* Hover effect for buttons */
+ .services-list div a:hover {
+     background-color: #0000007c;
+     /* Change background color on hover */
+ }
+
+ .services-list div {
+     background: #262626;
+     padding: 40px;
+     font-size: 13px;
+     font-weight: 300;
+     border-radius: 10px;
+     transition: background 0.5s, transform 0.5s;
+ }
+
+ .services-list div i {
+     font-size: 50px;
+     margin-bottom: 30px;
+ }
+
+ .services-list div h2 {
+     font-size: 30px;
+     font-weight: 500;
+     margin-bottom: 15px;
+ }
+
+ .services-list div a {
+     text-decoration: none;
+     color: #fff;
+     font-size: 12px;
+     margin-top: 20px;
+     display: inline-block;
+ }
+
+ .services-list div:hover {
+     background: #ff004f;
+     transforma: translateY(-10px);
+
+ }
+
+ /* ------See More Btn-------- */
+
+ .semoreBtn {
+     display: inline-block;
+     outline: 2px solid rgba(255, 0, 0, 0.39);
+     padding: 5px 20px;
+     background-color: transparent;
+     color: #fff;
+     text-decoration: none;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+
+
+     margin: 0 auto;
+     margin-top: 1cm;
+     display: block;
+     width: fit-content;
+ }
+
+ .semoreBtn:hover {
+     background-color: #b300004f;
+ }
+
+ /* contact
+
+.contact-left{
+    flex-basis: 35%;
+
+}
+
+.contact-right{
+    flex-basis: 35%;
+
+}
+
+.contact-left p{
+
+} */
+
+ /* Contact Me section */
+ #Contact {
+     background-color: #2626261b;
+     padding: 50px 0;
+ }
+
+ .container {
+     max-width: 960px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ /* Sub-title styling */
+ .sub-title {
+     font-size: 28px;
+     color: #edf6ff;
+     /* Blue sub-title color */
+ }
+
+ /* Contact information styling */
+ .contact-left p {
+     color: #ffffff;
+     /* Pink contact information color */
+     margin: 10px 0;
+ }
+
+ .social-icons a {
+     color: #ff004f;
+     /* Blue social icon color */
+     font-size: 24px;
+     margin-right: 10px;
+     text-decoration: none;
+ }
+
+ .social-icons a:hover {
+     color: #FF69B4;
+     /* Pink color on hover */
+ }
+
+ /* Contact form styling */
+ .contact-right form {
+     background-color: #ffe7e70f;
+     /* White form background */
+     padding: 20px;
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .contact-right input[type="text"],
+ .contact-right input[type="email"],
+ .contact-right textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ .contact-right button[type="submit"] {
+     background-color: #ff004f;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ .contact-right button:hover {
+     background-color: #00000069;
+ }
+
+
+
+ /* Base button styles */
+ .btn {
+     display: inline-block;
+     margin-top: 3%;
+     margin-bottom: 3%;
+     padding: 10px 20px;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+     text-align: center;
+     cursor: pointer;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     box-shadow: px 0px 10px rgb(255, 239, 239);
+ }
+
+ /* Primary button style */
+ .btn.btn2 {
+     background-color: #ff004f;
+     color: #fff;
+     border: none;
+ }
+
+ /* Hover effect for the button */
+ .btn.btn2:hover {
+     background-color: #262626;
+ }
+
+
+ .copyright {
+     width: 100%;
+     text-align: center;
+     padding: 25px 0;
+     background: #ffe7e70f;
+     font-weight: 300;
+     margin-top: 20px;
+ }
+
+ nav .fas {
+     display: none;
+ }
+
+ /* small screen---------- */
+
+ @media only screen and (max-width: 600px) {
+     #header {
+         background-image: url(img/phoneviewbgimg.png);
+     }
+
+     .header-text {
+         margin-top: 100%;
+         font-size: 16px;
+
+     }
+
+     .header-text h1 {
+         font-size: 30px;
+     }
+
+     nav .fas {
+         display: block;
+         font-size: 25px;
+
+     }
+
+     nav ul {
+         background: #ff004f;
+         position: fixed;
+         top: 0;
+         right: -200px;
+         width: 200px;
+         height: 100vh;
+         padding-top: 50px;
+         z-index: 2;
+         transition: right 0.5s;
+
+     }
+
+     nav ul li{
+        display: block;
+        margin: 25px;
+     }
+
+     nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+
+
+     }
+ }
