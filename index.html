@@ -272,38 +272,59 @@
 
 
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+ <script>
+    var tablinks = document.querySelectorAll(".tab-links");
+    var tabcontents = document.querySelectorAll(".tab-contents");
 
-        function opentab(tabname) {
-            for (var i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active-link");
-            }
-            for (var i = 0; i < tabcontents.length; i++) {
-                tabcontents[i].classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    tablinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+            opentab(this.dataset.tab);
+        });
+    });
 
-    <script>
+    function opentab(tabname) {
+        tablinks.forEach(function(link) {
+            link.classList.remove("active-link");
+        });
 
-        var sidemeu = document.getElementById("sidemenu");
+        tabcontents.forEach(function(content) {
+            content.classList.remove("active-tab");
+        });
 
-        function openmenu() {
-            sidemeu.style.right = "0";
-        }
+        document.querySelector("[data-tab='" + tabname + "']").classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 
-        function closemenu() {
-            sidemeu.style.right = "-200px";
-        }
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+Changes and improvements made in the revised code:
+
+Replaced getElementsByClassName with querySelectorAll to retrieve elements with specific classes.
+Changed the for loops to forEach loops for better readability and efficiency.
+Utilized the data-* attribute to associate tab links with their respective content.
+Improved the JavaScript to add event listeners to the tab links.
+Corrected the sidemenu variable name inconsistency.
+Remember, the CSS for styling these elements, classes (like active-link and active-tab), and the actual content for tabs should be defined in your code.
 
 
 
 
-    </script>
+
+
+
+
+
 
 
 
