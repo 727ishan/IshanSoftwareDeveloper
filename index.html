@@ -272,38 +272,40 @@
 
 
 
- <script>
-    var tablinks = document.querySelectorAll(".tab-links");
-    var tabcontents = document.querySelectorAll(".tab-contents");
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
 
-    tablinks.forEach(function(link) {
-        link.addEventListener("click", function() {
-            opentab(this.dataset.tab);
-        });
-    });
-
-    function opentab(tabname) {
         tablinks.forEach(function(link) {
-            link.classList.remove("active-link");
+            link.addEventListener("click", function() {
+                opentab(this.dataset.tab);
+            });
         });
 
-        tabcontents.forEach(function(content) {
-            content.classList.remove("active-tab");
-        });
+        function opentab(tabname) {
+            tablinks.forEach(function(link) {
+                link.classList.remove("active-link");
+            });
 
-        document.querySelector("[data-tab='" + tabname + "']").classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+            tabcontents.forEach(function(content) {
+                content.classList.remove("active-tab");
+            });
 
-    var sidemenu = document.getElementById("sidemenu");
+            document.querySelector("[data-tab='" + tabname + "']").classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
 
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
+        var sidemenu = document.getElementById("sidemenu");
 
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    });
 </script>
 
 </body>
