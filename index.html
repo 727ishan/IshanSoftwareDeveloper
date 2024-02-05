@@ -292,7 +292,7 @@
                 content.classList.remove("active-tab");
             });
 
-            document.querySelector("[data-tab='" + tabname + "']").classList.add("active-link");
+            document.querySelector(".tab-links[data-tab='" + tabname + "']").classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
 
@@ -307,6 +307,7 @@
         }
     });
 </script>
+
 
 </body>
 </html>
